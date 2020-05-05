@@ -1,41 +1,47 @@
 import React from "react";
-import Similar from '../src/Component/Similar_Items_Component.js';
-import AlsoBought from '../src/Component/Customers_Also_Bought.js';
-import '../src/styles/App.scss'
+import Similar from "../src/Component/Similar_Items_Demo.js";
+import AlsoBought from "../src/Component/Customers_Also_Bought.js";
+import { Nav } from "react-bootstrap";
+
+import "../src/styles/App.scss";
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { date: new Date() };
+    this.state = {
+      currentTab: true,
+      tab1: <Similar />,
+      tab2: <AlsoBought />,
+    };
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  tick() {
-    this.setState({
-      date: new Date(), 
-    });
+  handleClick() {
+    this.setState((state) => ({
+      currentTab: !state.currentTab,
+    }));
+    console.log(this.state.currentTab);
   }
 
   render() {
     return (
       <div className="App">
         <header className="Title">RECOMMENDED FOR YOU</header>
-        <button className="Button1">Similar Items</button>
-        <button className="Button2">Customers Also Bought</button>
-        <Similar/>
-        <AlsoBought /> 
+        <Nav fill variant="tabs" defaultActiveKey="/home">
+          <Nav.Item>
+            <Nav.Link onClick={this.handleClick}>Similar Items </Nav.Link>
+          </Nav.Item>
+          <Nav.Item onClick={this.handleClick}>
+            <Nav.Link >
+              Customers Also Bought
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item></Nav.Item>
+        </Nav>
         <div className="LowerBox">
-        <button id="Button3">Shop All Similar Items</button>
+          <button id="Button3">Shop All Similar Items</button>
         </div>
-        </div>
-
+      </div>
     );
   }
 }
