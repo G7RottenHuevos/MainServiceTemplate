@@ -10,7 +10,7 @@ const images = [];
 images.push(img1, img2, img3, img4, img5 ,img6);
 
 
-let imageHead = <img type='button' src={images[0]} alt={images[1]} className='imgHead'></img>
+let imageHead = <img src= {images[0]} alt={images[1]} className='imgHead'></img>
 
 const imageDivs = images.map((val, index) => {
   return index = <img src={val} alt='index' key={index} className='img'></img>;

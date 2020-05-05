@@ -12,7 +12,7 @@ class App extends React.Component{
   }
 
   componentDidMount() {
-
+    this.setState({currImage: imgScroller.imageHead})
   }
 
   handleHover(imgHovered) {
