@@ -1,149 +1,188 @@
 @import "~bootstrap/scss/bootstrap";
-.App{
-  text-align: justify;
+.App {
+  // text-align: justify;
+  width: 900px;
+  padding: 122px 1px 43px 260px;
 }
-  .LowerBox{
-    align-items: 5%;
-  }
+// .LowerBox{
+//   align-items: 5%;
+// }
 
 .carousel-caption {
-    color: black;
-  }
-  
-  .carousel-indicators {
-    position: absolute;
-    color: black;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 15;
-    display: flex;
-    justify-content: center;
-    padding-left: 0; // override <ol> default
-    // Use the .carousel-control's width as margin so we don't overlay those
-    margin-right: $carousel-control-width;
-    margin-left: $carousel-control-width;
-    list-style: none;
-  
-    li {
-      box-sizing: content-box;
-      flex:  auto;
-      width: 10%;
-      height: 60%;
-      margin-right: $carousel-indicator-spacer;
-      margin-left: $carousel-indicator-spacer;
-      text-indent: -999px;
-      cursor: pointer;
-      background-color: black;
-      background-clip: padding-box;
-      // Use transparent borders to increase the hit area by 10px on top and bottom.
-      border-top: $carousel-indicator-hit-area-height solid transparent;
-      border-bottom: $carousel-indicator-hit-area-height solid transparent;
-      opacity: .5;
-      @include transition($carousel-indicator-transition);
-    }
-  
-    .active {
-      opacity: 1;
-    }
-  }
-  .nav-tabs {
-    border-bottom: $nav-tabs-border-width ;
-    width:  60%;
-  
-    .nav-item {
-      margin-bottom: 0%;
-    }
-  
-    .nav-link {
-      border: $nav-tabs-border-width solid #ccc;
-      border-bottom: transparent;
-      @include border-top-radius($nav-tabs-border-radius);
-  
-      @include hover-focus() {
-        border-color: $nav-tabs-link-hover-border-color;
-      }
-  
-      &.disabled {
-        color: $nav-link-disabled-color;
-        background-color: transparent;
-        border-color: transparent;
-      }
-    }
-  
-    .nav-link.active,
-    .nav-item.show .nav-link {
-      color: $nav-tabs-link-active-color;
-      background-color: $nav-tabs-link-active-bg;
-      border-color: $nav-tabs-link-active-border-color;
-    }
-  
-    .dropdown-menu {
-      // Make dropdown border overlap tab border
-      margin-top: -$nav-tabs-border-width;
-      // Remove the top rounded corners here since there is a hard edge above the menu
-      @include border-top-radius(0);
-    }
-  }
-  .OuterBox {
-    text-align: center;
-    // align-items: center;
-    // display: flex;
-    width:  auto;   
-    height: auto;
-    border: 1px solid #ccc;
-  }
-  .CenterBox {
-    text-align: center;
-    // align-items: center;
-    // display: flex;
-    width:  auto;   
-    height: 240px;
-    border: 1px solid #ccc;
-  }
-  .LowerBox {
-    text-align: center;
-    // align-items: center;
-    width:  auto;   
-    height: auto;
-    border: 1px solid #ccc;
-  }
-  #Button3{
-    background-color: white;
-    border-color: white;
-  }
-  .ItemBox {
-    padding:15px 10px 20px 25px
-  }
-  .ItemName {
-    font-size: 13px;
-  }
-  .Price {
-    font-size: 15px
-  }
-  .Title{
-    font-size: 32px;
-  }
-  .Image {
-    width:40%;
-    height: auto;
-  }
-  .ItemBox2{
-    padding:15px 10px 20px 25px
-  }
-  .carousel-inner {
-    text-align: center;
-    // align-items: center;
-    display: flex;
-    width:  auto;   
-    height: auto;
-    border: 1px solid #ccc;
-  }
-  .carousel-control-prev-icon3{
-background-color: black;
-color: black;
+  color: black;
 }
-.sr-only2{
+
+.carousel-indicators {
+  position: absolute;
+  color: black;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: none;
+  justify-content: center;
+  padding-left: 0; // override <ol> default
+  // Use the .carousel-control's width as margin so we don't overlay those
+  margin-right: $carousel-control-width;
+  margin-left: $carousel-control-width;
+  list-style: none;
+
+  li {
+    box-sizing: content-box;
+    flex: auto;
+    width: 10%;
+    height: 60%;
+    margin-right: $carousel-indicator-spacer;
+    margin-left: $carousel-indicator-spacer;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: black;
+    background-clip: padding-box;
+    // Use transparent borders to increase the hit area by 10px on top and bottom.
+    border-top: $carousel-indicator-hit-area-height solid transparent;
+    border-bottom: $carousel-indicator-hit-area-height solid transparent;
+    opacity: 0.5;
+    @include transition($carousel-indicator-transition);
+  }
+
+  .active {
+    opacity: 1;
+  }
+}
+.nav-tabs {
+  border-bottom: $nav-tabs-border-width;
+  width: 289px;
+
+  .nav-item {
+    margin-bottom: 0%;
+  }
+
+  .nav-link {
+    border: $nav-tabs-border-width solid #ccc;
+    color: grey;
+    font-size: 11px;
+
+    border-bottom: transparent;
+    @include border-top-radius($nav-tabs-border-radius);
+
+    @include hover-focus() {
+      border-color: $nav-tabs-link-hover-border-color;
+    }
+
+    &.disabled {
+      color: $nav-link-disabled-color;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: $nav-tabs-link-active-color;
+    background-color: $nav-tabs-link-active-bg;
+    border-color: $nav-tabs-link-active-border-color;
+  }
+
+  .dropdown-menu {
+    // Make dropdown border overlap tab border
+    margin-top: -$nav-tabs-border-width;
+    // Remove the top rounded corners here since there is a hard edge above the menu
+    @include border-top-radius(0);
+  }
+}
+.OuterBox {
+  text-align: center;
+  // align-items: center;
+  // display: flex;
+  width: 900px;
+  height: 225px;
+  border: 1px solid #ccc;
+}
+.CenterBox {
+  text-align: center;
+  // align-items: center;
+  // display: flex;
+  width: auto;
+  height: 240px;
+  border: 1px solid #ccc;
+}
+#Button3 {
+  background-color: white;
+  border-color: white;
+}
+.ItemBox {
+  padding: 50px 0px 50px 5px;
+  margin-bottom: 15px;
+}
+.ItemName {
+  font-size: 11px;
+}
+.Price {
+  font-size: 10px;
+}
+.checkbox {
+  font-size: 11px;
+}
+.Title {
+  font-size: 22px;
+  width: 800px;
+  letter-spacing: 1px;
+  margin: 10px 0 20px 0;
+}
+.Image {
+  width: 40%;
+  height: auto;
+}
+.ItemBox2 {
+  padding: 15px 10px 20px 25px;
+  margin-bottom: 15px;
+}
+.carousel-inner {
+  text-align: center;
+  // align-items: center;
+  display: flex;
+  width: auto;
+  height: auto;
+  // border: 1px solid #ccc;
+}
+.carousel-control-next-icon {
+  // background-image:
+}
+.sr-only2 {
   background-color: black;
   display: block;
-  }
+}
+// .nav{
+//   width:340px;
+// }
+
+.LowerBox {
+  width: 900px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+.Image_Small {
+  width: 100px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+}
+.ADD_SELECT_LEFT {
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+#SUMMARY {
+  overflow: break-word;
+  font-size: 10px;
+  width: 200px;
+  height: 36px;
+}
+.ADD_SELECT_RIGHT {
+  width: 200px;
+}
+#Button4 {
+  -webkit-transform: scale(1.1) translate(600px);
+  margin: 10px 20px;
+  background-color: rgb(230, 114, 5);
+  border-color: rgb(225, 3, 3);
+}
