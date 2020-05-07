@@ -10,9 +10,17 @@ class Main extends React.Component {
     super(props);
     this.state = {
       currentTab: "similar",
+      siData: [],
+      cabData: [],
+      mainItemPrice: "$35.32",
+      selectedItems: 0,
+      addToCompare: 0,
     };
     this.clickSimilar = this.clickSimilar.bind(this);
     this.clickAlso = this.clickAlso.bind(this);
+    this.shopAllSimilarItems = this.shopAllSimilarItems.bind(this);
+    this.selectedItems = this.selectedItems.bind(this);
+    this.AddSelectedToCart = this.AddSelectedToCart.bind(this);
   }
 
   clickSimilar() {
@@ -26,6 +34,15 @@ class Main extends React.Component {
       currentTab: "almost",
     }));
     console.log(this.state.currentTab);
+  }
+  shopAllSimilarItems() {
+    console.log("You are now shopping for similar items");
+  }
+  selectedItems(e) {
+    console.log("You are now selecting items");
+  }
+  AddSelectedToCart() {
+    console.log("You've added selected to cart");
   }
 
   render() {
@@ -41,27 +58,15 @@ class Main extends React.Component {
           </Nav.Item>
           <Nav.Item></Nav.Item>
         </Nav>
-        {this.state.currentTab === "similar" ? <Similar /> : <AlsoBought />}
-        <div className="LowerBox">
-          <button id="Button3">Shop All Similar Items</button>
-          <div className="ADD_SELECTED_TO_CART">
-            <div className="ADD_SELECT_LEFT">
-              <img
-                className="Image_Small"
-                src="https://recommendedforyou.s3.us-east-2.amazonaws.com/Img_1.jpg"
-                alt="First slide"
-              />
-              <div id="SUMMARY">
-                50 Pcs 3 Layer Disposible Face Masks Tie-on Earloop/Elastic
-              </div>
-            </div>
-            <div className="ADD_SELECT_RIGHT">
-              <div id="SELECTED_ITEMS">0 Selected Items</div>
-              <div id="Price">$33.48</div>
-            </div>
-            <button id="Button4">ADD SELECTED TO CART</button>
-          </div>
-        </div>
+        {this.state.currentTab === "similar" ? (
+          <Similar shopAllSimilarItems={this.shopAllSimilarItems} />
+        ) : (
+          <AlsoBought
+            selectedItems={this.selectedItems}
+            AddSelectedToCart={this.AddSelectedToCart}
+            price={this.state.mainItemPrice}
+          />
+        )}
       </div>
     );
   }

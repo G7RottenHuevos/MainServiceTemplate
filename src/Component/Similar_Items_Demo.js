@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-export default function SimilarItems() {
+export default function SimilarItems(props) {
   return (
     <div className="OuterBox">
       <Carousel interval={null}>
@@ -128,35 +128,16 @@ export default function SimilarItems() {
                     <input type="checkbox"></input>ADD TO COMPARE
                   </span>
                 </div>
-                <a
-                  class="carousel-control-prev"
-                  href="#slide"
-                  role="button"
-                  data-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="false"
-                  ></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a
-                  class="carousel-control-next"
-                  href="#slide"
-                  role="button"
-                  data-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="false"
-                  ></span>
-                  <span class="sr-only">Next</span>
-                </a>
               </Col>
             </Row>
           </Container>
         </Carousel.Item>
       </Carousel>
+      <div className="LowerBox">
+        <button id="Button3" onClick={props.shopAllSimilarItems}>
+          Shop All Similar Items
+        </button>
+      </div>
     </div>
   );
 }
