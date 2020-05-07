@@ -3,7 +3,7 @@ import Tabs from './Tabs.js';
 import { Overview } from "./Overview.js"
 import { Specifications } from "./Specifications.js"
 import { WarrantyReturns } from "./Warranty Returns.js"
-import { Reviews } from "./Review.js"
+import { Reviews } from "./Reviews.js"
 import { QA } from "./QA.js"
 
 const styles = {

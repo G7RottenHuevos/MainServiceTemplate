@@ -1,13 +1,9 @@
 import React from 'react';
+import QAInputs from './QAInputs'
 
 export const QA = () =>(
         <div>
-            <h3>Have a question about this? Ask people who own it.</h3>
-            <h5>*** input blank text box***</h5>
-            <h5>Why did you choose this?</h5>
-            <h5>Helen B.  May 2, 2020</h5>
-            <h5>THE WORLD IS ENDING!!!!</h5>
-            <h5>Comments</h5>
+            <QAInputs/>
         </div>
 )
 
