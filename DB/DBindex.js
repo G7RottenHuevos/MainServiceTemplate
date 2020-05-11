@@ -1,29 +1,55 @@
-var mysql = require('mysql');
-var mysqlConfig = require('./config.js');
+var mysql = require("mysql");
+var mysqlConfig = require("./config.js");
 var connection = mysql.createConnection(mysqlConfig);
 
-/*
-const *funcName* = (cb) => {
-    connection.query("SELECT * FROM *Table*", (err, data) =>{  //selects all from the students table in the schema
-        if(err){                                              //using an error first callback
-            cb(err, null)
-        }else{
-            cb(null, data)
-        }
-    })
-}
-
-const *funcName* = (cb) => {
-    connection.query("SELECT * FROM *Table*", (err, data) =>{  //selects all from the students table in the schema
-        if(err){  
-            console.log("db not good")                                            //using an error first callback
-            cb(err, null)
-        }else{
-            console.log("db good")
-            cb(null, data)
-        }
-    })
-}
-*/
-module.exports = {  //exports this function
+const retrieveAllSimilarItems = (cb) => {
+  connection.query("SELECT * FROM similar_items", function (error, results) {
+    if (error) {
+      cb(error, null);
+    } else {
+      cb(null, results);
+    }
+  });
+};
+const retrieveSingleSimilarItems = (id, cb) => {
+  connection.query("SELECT * FROM similar_items WHERE id=?", [id], function (
+    error,
+    results
+  ) {
+    if (error) {
+      cb(error, null);
+    } else {
+      cb(null, results);
+    }
+  });
+};
+const retrieveAllCustomersAlsoBoughtItems = (cb) => {
+  connection.query("SELECT * FROM customers_also_bought", function (
+    error,
+    results
+  ) {
+    if (error) {
+      cb(error, null);
+    } else {
+      cb(null, results);
+    }
+  });
+};
+const retrieveSingleSimilarItems = (id, cb) => {
+  connection.query(
+    "SELECT * FROM customers_also_bought WHERE id=?",
+    [id],
+    function (error, results) {
+      if (error) {
+        cb(error, null);
+      } else {
+        cb(null, results);
+      }
+    }
+  );
+};
+module.exports = {
+  retrieveAllSimilarItems,
+  retrieveSingleSimilarItems,
+  retrieveAllCustomersAlsoBoughtItems,
 };

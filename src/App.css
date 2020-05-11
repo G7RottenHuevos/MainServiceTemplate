@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+/* .App {
+  text-align: left;
 }
 
 .App-logo {
@@ -27,6 +27,7 @@
 .App-link {
   color: #61dafb;
 }
+      
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +37,35 @@
     transform: rotate(360deg);
   }
 }
+.Similar_Items {
+  text-align: center;
+  display: flex;
+  width:  50%;
+  height: 50%;
+  border: 1px solid #ccc;
+}
+
+.OuterBox {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  width:  60%;
+  height: 260px;
+  border: 1px solid #ccc;
+}
+.ItemBox {
+  padding:15px 10px 7px 18px
+}
+.ItemName {
+  font-size: 13px;
+}
+.Price {
+  font-size: 15px
+}
+.Title{
+  font-size: 32px;
+}
+.Image {
+  width:40%;
+  height: 100px;
+} */
