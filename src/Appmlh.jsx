@@ -1,7 +1,7 @@
 import React from 'react';
 import imgScroller from './Component/imgScroller';
 import './Appmlh.css';
-// import Axios from 'axios';
+
 
 class App extends React.Component{
   constructor(props){
@@ -23,6 +23,10 @@ class App extends React.Component{
 
   }
 
+  handleHover() {
+    console.log('Hello World!');
+  }
+
 
   render() {
     return (
@@ -37,7 +41,9 @@ class App extends React.Component{
           </thead>
           <tbody id='imgList'>
             <tr id='imgbuttons'>
-              <imgScroller.Scroller images={this.state.images}/>
+              <td>
+                <imgScroller.Scroller images={this.state.images} hovered={this.handleHover}/>
+              </td>
             </tr>
           </tbody>
         </table>
