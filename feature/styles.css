@@ -1,0 +1,55 @@
+ul.gonzoA {
+    list-style-type: circle;
+    color: grey;
+}
+p.gonzo1 {
+     font-family: arial;
+     font-size: 23px;
+
+}
+p.gonzo2 {
+     font-family: arial;
+     color: red;
+     position: relative;
+     top: 40px; left: 40px;
+}
+.gonzoBottomDescriptionA {
+    font-size: 23px;
+    font-style: arial;
+}
+.gonzoTopDescription1 {
+    display: block;
+    font-size: 25px;
+    font-style: arial;
+}
+.gonzoTopDescription2 {
+    font-size: 15px;
+    font-style: arial;
+    text-align: center;
+    color:#cc4e00;
+    line-height: 1.3;
+}
+.gonzoShippingA {
+    font-size: 23px;
+    font-style: arial;
+}
+.gonzoEggs {
+    display: inline-block;
+    vertical-align: middle;
+    width: 59px;
+    height: 13px;
+    overflow: hidden;
+    background:  no-repeat;
+}
+p.gonzohippingB {
+    color: #cc4e00;
+    font-size: 12px;
+}
+.gonzoReview1 {
+    color: #4d4d4d;
+    border-bottom: 1px dotted #999;
+}
+.gonzoReview2 {
+color: #4d4d4d;
+    border-bottom: 1px dotted #999;
+}
