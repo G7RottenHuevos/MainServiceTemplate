@@ -1,4 +1,6 @@
 import React from 'react';  
+import IMAGES from './Gallery';
+import Gallery from 'react-grid-gallery';
 import '../Appmlh.css';  
 
 class Popup extends React.Component {  
@@ -6,7 +8,9 @@ class Popup extends React.Component {
     return (  
       <div className='popup'>  
         <div className='popup\_inner'>  
-          <h1>{this.props.text}</h1>  
+          <h1>
+            <Gallery images={IMAGES} />
+          </h1>  
           <button onClick={this.props.closePopup}>close me</button>  
         </div>  
       </div>  

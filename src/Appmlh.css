@@ -3,14 +3,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-image {
-  margin: 1px;
-  width: 352px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-}
 .imgHead {
+  margin: 0;
   width: 40%;
 }
 
@@ -22,9 +16,12 @@
   border-color: rgb(216, 216, 216);
 }
 
-.imgbuttons {
-  background-origin: padding-box;
-
+.imgButtons {
+  margin: 0;
+  position: relative;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%);
 }
 
 .popup {  

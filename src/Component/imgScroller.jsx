@@ -1,5 +1,5 @@
 import React from 'react';
-import Popup from './Popup';
+import Popup from './Popup.jsx';
 
 class Scroller extends React.Component {
   constructor(props) { 
@@ -10,7 +10,8 @@ class Scroller extends React.Component {
       Show: false
     };
     this.testModal = this.testModal.bind(this);
-
+    this.handleHover = this.handleHover.bind(this);
+    this.togglePopup = this.togglePopup.bind(this);
   };
 
   componentDidMount() {
@@ -32,17 +33,17 @@ class Scroller extends React.Component {
   render() {
     return (
       <div>
-          <table id='carousel-app'>
-          <thead id='main-image'>
+          <table className='carousel-app'>
+          <thead className='main-image'>
             <tr>
-              <td id='HeaderImg'>
+              <td className='headerImg'>
                 <img src={this.state.image} alt={this.state.images[0]} className='imgHead' onClick={this.togglePopup.bind(this)}></img> 
               </td>
             </tr>
           </thead>
-          <tbody id='imgList'>
-            <tr id='imgbuttons'>
-              <td>
+          <tbody className='imgList'>
+            <tr>
+              <td className='imgButtons'>
               {this.state.images.map((val, index) => {
                 return <img src={val} alt={index} key={index} className='img' onMouseEnter={this.handleHover.bind(this, index)}></img>;
               })}
@@ -52,8 +53,9 @@ class Scroller extends React.Component {
         </table>
         {this.state.Show ?  
           <Popup  
-                    text='Click "Close Button" to hide popup'  
-                    closePopup={this.togglePopup.bind(this)}  
+            text='Click "Close Button" to hide popup'  
+            closePopup={this.togglePopup.bind(this)}  
+            IMAGES={this.state.images}
           />
           : console.log('null', null)
         }
