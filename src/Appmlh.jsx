@@ -1,6 +1,6 @@
 import React from 'react';
 import Scroller from './Component/imgScroller';
-import './Appmlh.css';
+import './Appmlh.css'; 
 class App extends React.Component{
   constructor(props){
     super(props)

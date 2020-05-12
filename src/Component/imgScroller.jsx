@@ -2,7 +2,7 @@ import React from 'react';
 import Popup from './Popup';
 
 class Scroller extends React.Component {
-  constructor(props) {
+  constructor(props) { 
     super(props)
     this.state ={
       image: props.image,
