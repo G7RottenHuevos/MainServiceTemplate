@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect } from "react-router-dom";
+// import axios from 'axios';
 
 class ReviewInputs extends React.Component {
     constructor(props){
@@ -25,8 +26,20 @@ class ReviewInputs extends React.Component {
             [e.target.name]: e.target.value
         })
     }
+    // changeHandler(){
+    //     axios 
+    //     .get("/api/Reviews/:id/review")
+    //     .then((res) => {
+    //       console.log(res.data);
+    //       const data = res.data;
+    //       this.setState({groups : data}); 
+    //     })
+    //     .catch((err) => { 
+    //       console.error(err);
+    //     });
+    //     }
     componentDidMount(){
-      
+        // changeHandler()
     }
     render() {
         const {name} = this.state;
@@ -37,8 +50,7 @@ class ReviewInputs extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <p><input type ='text' placeholder="Your Name"  name="name" onChange={this.handleInputChange}/></p>
                     <p><input type = 'text' placeholder='Write Review Here'review="review" onChange={this.handleInputChange}/></p>
-                    <p><button onPress={this.buttonClickListener}>Write A Review</button></p>
-                    
+                    <p><button onClick={this.buttonClickListener}>Write A Review</button></p>
                 </form>
             </div>
         )

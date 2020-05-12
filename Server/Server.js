@@ -10,17 +10,29 @@ app.use( bodyParser.json() );
 app.use( bodyParser.urlencoded({ extended: true }) );
 app.use(express.static(path.join(__dirname + '/../react-client/dist')));
 
-// app.get('/api/students/:id/preferences', function (req, res) {
-//     db.getAllStudents((err, data) => {           //calls the getAllStudents function
-//       if(err){                                   //error first callback
-//         console.log('error in server');
-//         res.status(405).send(data);
-//       }else{
-//         console.log('students G2G');
-//         res.status(200).send(data);
-//       }
-//     })
-//   });
+app.get('/api/Reviews/:id/ /*column name*/', function (req, res) {
+  db.getAllReviews((err, data) => {           //calls the getAllStudents function
+    if(err){                                   //error first callback
+      console.log('Reviews DB error');
+      res.status(404).send(data);
+    }else{
+      console.log('Reviews Returned');
+      res.status(200).send(data);
+    }
+  })
+});
+
+app.get('/api/questions/:id/ /*column name*/', function (req, res) {
+    db.getAllQuestions((err, data) => {           //calls the getAllStudents function
+      if(err){                                   //error first callback
+        console.log('Question DB error');
+        res.status(404).send(data);
+      }else{
+        console.log('Questions Returned');
+        res.status(200).send(data);
+      }
+    })
+  });
 
 // app.get('/api/preferences/:id/preferences', function (req, res) { //get request for the make random function
 //     db.getAllPreferences((err, data) => {     

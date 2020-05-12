@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.jsx';
+import PaulApp from './PaulApp.jsx';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <PaulApp />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -32,7 +32,7 @@ class QAInputs extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <p><input type ='text' placeholder="Your Name"  name="name" onChange={this.handleInputChange}/></p>
                     <p><input type = 'text' placeholder='Write Question Here'Question="Question" onChange={this.handleInputChange}/></p>
-                    <p><button>Post Question</button></p>
+                    <p><button onClick={this.buttonClickListener}>Write A Review</button></p>
                 </form>
             </div>
         )
