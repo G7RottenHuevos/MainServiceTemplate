@@ -1,8 +1,6 @@
 import React from 'react';
-import imgScroller from './Component/imgScroller';
+import Scroller from './Component/imgScroller';
 import './Appmlh.css';
-
-
 class App extends React.Component{
   constructor(props){
     super(props)
@@ -20,33 +18,12 @@ class App extends React.Component{
   }
 
   componentDidMount() {
-
   }
-
-  handleHover() {
-    console.log('Hello World!');
-  }
-
 
   render() {
     return (
       <div className="App">
-        <table id='carousel-app'>
-          <thead id='main-image'>
-            <tr>
-              <td id='HeaderImg'>
-                <img src={this.state.currImage} alt={this.state.images[0]} className='imgHead'></img>
-              </td>
-            </tr>
-          </thead>
-          <tbody id='imgList'>
-            <tr id='imgbuttons'>
-              <td>
-                <imgScroller.Scroller images={this.state.images} hovered={this.handleHover}/>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <Scroller images={this.state.images} image={this.state.currImage}/>
       </div>
     );
   }
