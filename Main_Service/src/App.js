@@ -14,18 +14,18 @@ class App extends React.Component {
       answers: []
     }
     // bind 
-    this.reviewHandler = this.reviewHandler.bind(this);
+    // this.reviewHandler = this.reviewHandler.bind(this);
   }
   // function definitions
-  reviewHandler = () => {
-    alert("Log in required!");
-  }
+  // reviewHandler = () => {
+  //   alert("Log in required!");
+  // }
 
   render() {
     return (
       <div>
         <TopDescription />
-        <ReviewLinks onHover={this.reviewHandler}/>
+        <ReviewLinks />
         <Shipping /> 
         <BottomDescription />
       </div>
