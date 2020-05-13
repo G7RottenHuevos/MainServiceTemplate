@@ -22,17 +22,17 @@ app.get('/api/Reviews/:id/review', function (req, res) {
   })
 });
 
-app.get('/api/questions/:id/questions', function (req, res) {
-    db.getAllQuestions((err, data) => {           //calls the getAllStudents function
-      if(err){                                   //error first callback
-        console.log('Question DB error');
-        res.status(404).send(data);
-      }else{
-        console.log('Questions Returned');
-        res.status(200).send(data);
-      }
-    })
-  });
+// app.get('/api/questions/:id/questions', function (req, res) {
+//     db.getAllQuestions((err, data) => {           //calls the getAllStudents function
+//       if(err){                                   //error first callback
+//         console.log('Question DB error');
+//         res.status(404).send(data);
+//       }else{
+//         console.log('Questions Returned');
+//         res.status(200).send(data);
+//       }
+//     })
+//   });
 
 // app.get('/api/preferences/:id/preferences', function (req, res) { //get request for the make random function
 //     db.getAllPreferences((err, data) => {     

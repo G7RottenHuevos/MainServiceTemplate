@@ -20,12 +20,14 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "serverStart": "node ./bin/www",
+    "serverStart": "nodemon Server/server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:3001",
+
   "eslintConfig": {
     "extends": "react-app"
   },
