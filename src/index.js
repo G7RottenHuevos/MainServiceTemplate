@@ -5,7 +5,7 @@ import App from './App.jsx';
 // import './index.css';
 import '../src/styles/App.scss';
 
-console.log(process.env);
+// console.log(process.env);
 
 ReactDOM.render(
   <React.StrictMode>

@@ -11,8 +11,8 @@ class Main extends React.Component {
     super(props);
     this.state = {
       currentTab: "similar",
-      siData: [],
-      cabData: [],
+      similarItemsData: [],
+      customersAlsoBoughtData: [],
       mainItemPrice: "$35.32",
       selectedItems: 0,
       addToCompare: 0,
@@ -24,10 +24,11 @@ class Main extends React.Component {
     this.AddSelectedToCart = this.AddSelectedToCart.bind(this);
   }
   componentDidMount() {
-    axios.get('/similarItems')
+    axios.get('/similar')
       .then(res => {
-        const siData = res.data;
-        this.setState({ siData });
+        const similarItemsData = res.data;
+        console.log(similarItemsData);
+        this.setState({ similarItemsData });
       })
   }
 
@@ -35,7 +36,7 @@ class Main extends React.Component {
     this.setState((state) => ({
       currentTab: "similar",
     }));
-    console.log(this.state.siData);
+    console.log(this.state.similarItemsData);
   }
   clickAlso() {
     this.setState((state) => ({
