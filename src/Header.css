@@ -1,0 +1,95 @@
+
+.daltonLogo {
+    width: 200px;
+    height: auto;
+}
+
+.daltonNavbar {
+    color: rgb(0, 49, 12);
+}
+
+.daltonShoppingCart {
+position: absolute;
+bottom: 20px;
+left: 1865px;
+}
+
+.mr-sm-2 {
+position: absolute;
+right: 500px;
+bottom: 50px;
+
+}
+
+.daltonSearchButton {
+    position: absolute;
+    right: 435px;
+    bottom: 50px;
+}
+
+.daltonSignIn {
+    position: absolute;
+    left: 1750px;
+    bottom: 60px
+}
+
+.daltonNightMode {
+    position: absolute;
+    left: 2025px;
+    bottom: 45px;
+}
+
+.daltonSearchBar{
+    width: 100vw;
+}
+
+.daltonSignInIcon {
+    position: absolute;
+    left: 1710px;
+    top: 35px;
+    width: 25px;
+    height: 25px;
+}
+
+.daltonFlag {
+    position: absolute;
+    left: 2025px;
+    bottom: 5px;
+}
+
+.daltonCustomerService{
+    position: absolute;
+    left: 1850px;
+    bottom: 15px;
+}
+
+.daltonBubble{
+    position: absolute;
+    left: 1698px;
+    bottom: 10px;
+}
+
+.daltonFeedback{
+    position: absolute;
+    left: 1740px;
+    bottom: 15px;
+}
+
+.daltonBusiness{
+    position: absolute;
+    left: 1520px;
+    bottom: 15px;
+}
+
+.daltonQuestion{
+    position: absolute;
+    left: 1808px;
+    bottom: 10px;
+}
+
+.daltonWelcome{
+    position: absolute;
+    left: 1745px;
+    bottom: 70px;
+    color: rgb(151, 151, 151);
+}

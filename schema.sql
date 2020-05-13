@@ -1,19 +1,18 @@
--- DROP DATABASE IF EXISTS *DBName*;
+DROP DATABASE IF EXISTS header;
 
--- CREATE DATABASE *DBName*;
+CREATE DATABASE header;
 
--- USE *DBName*;
+USE header;
 
--- CREATE TABLE *TableName* (
+CREATE TABLE autofill (
 --   id int NOT NULL AUTO_INCREMENT,
 --   name varchar(50) NOT NULL,
 --   PRIMARY KEY (ID)
--- );
+);
 
--- CREATE TABLE *TableName* (
+CREATE TABLE searchResults (
 --   id int NOT NULL AUTO_INCREMENT,
 --   from_student int NOT NULL,
 --   to_student int NOT NULL,
 --   preference_type ENUM("YES", "NO", "VETO") NOT NULL,
---   PRIMARY KEY (ID)
--- );
+);

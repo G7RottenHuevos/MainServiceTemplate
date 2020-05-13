@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var db = require('../database-mysql/index.js');
 var path = require('path')
 var app = express();
-var port = "3001";
+var port = "6969";
 
 
 app.use( bodyParser.json() );
@@ -36,6 +36,6 @@ app.use(express.static(path.join(__dirname + '/../react-client/dist')));
 //   });
 
 app.listen(port, function() {
-    console.log('listening on port 3001!');
+    console.log('listening on port 6969!');
   });
   
