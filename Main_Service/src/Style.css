@@ -1,0 +1,131 @@
+ul.gonzoA {
+  list-style-type: circle;
+  color: grey;
+}
+p.gonzo1 {
+   font-family: arial;
+   font-size: 23px;
+
+}
+p.gonzo2 {
+   font-family: arial;
+   color: red;
+   position: relative;
+   top: 40px; left: 40px;
+}
+.gonzoBottomDescriptionA {
+  font-size: 23px;
+  font-style: arial;
+}
+.gonzoTopDescription1 {
+  display: inline-block;
+  font-size: 25px;
+  font-style: arial;
+  white-space: pre;
+}
+.gonzoTopDescription2 {
+  font-size: 15px;
+  font-style: arial;
+  text-align: center;
+  color:#cc4e00;
+  line-height: 1.3;
+}
+.gonzoShippingA {
+  font-size: 17px;
+  font-style: arial;
+}
+.gonzoShippingB {
+  color: #cc4e00;
+  font-size: 17px;
+}
+.gonzoShippingC {
+  color: #1f61ad;
+  font-size: 17px;
+  line-height: 1;
+  font: 700 14px;
+}
+.gonzoReview1 {
+  color: #4d4d4d;
+  border-bottom: 1px dotted #999;
+  font-size: 13px;
+}
+.gonzoReview2 {
+  color: #4d4d4d;
+  border-bottom: 1px dotted #999;
+  font-size: 13px;
+}
+.gonzoEggs {
+  display: inline-block;
+  vertical-align: middle;
+  width: 59px;
+  height: 13px;
+  overflow: hidden;
+  background:  no-repeat;
+}
+.dropbtn {
+  background-color:white;
+  padding: 3px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropDownContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+  /* right: 0; */
+  /* fix this if set wrong */
+}
+.dropdown:hover .dropDownContent {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:white;
+  padding: 3px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.pintrest {
+  background-color:rgb(230, 0, 35);
+  font-size: 13px;
+  font-style: arial;
+  color: white;
+  
+}
+.twitter {
+  background-color:rgba(59, 107, 228, 0.94);
+  font-size: 13px;
+  font-style: arial;
+  color: white;
+  
+}
+.email {
+  background-color:whitesmoke;
+  font-size: 13px;
+  font-style: arial;
+  color: black;
+}
+.facebook {
+  background-color: rgba(49, 20, 242, 0.94);
+  font-size: 13px;
+  font-style: arial;
+  color: white;
+}
+.share {
+  background-color:rgb(49, 20, 242, 0.94);
+  font-size: 13px;
+  font-style: arial;
+  color: white;
+}
+.pp {
+  height: 100px;
+  width: 100%;
+}
