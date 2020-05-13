@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var db = require('../database-mysql/index.js');
+var db = require('../DB/DBindex.js');
 var path = require('path')
 var app = express();
 var port = "3001";
@@ -10,7 +10,7 @@ app.use( bodyParser.json() );
 app.use( bodyParser.urlencoded({ extended: true }) );
 app.use(express.static(path.join(__dirname + '/../react-client/dist')));
 
-app.get('/api/Reviews/:id/ /*column name*/', function (req, res) {
+app.get('/api/Reviews/:id/review', function (req, res) {
   db.getAllReviews((err, data) => {           //calls the getAllStudents function
     if(err){                                   //error first callback
       console.log('Reviews DB error');
@@ -22,7 +22,7 @@ app.get('/api/Reviews/:id/ /*column name*/', function (req, res) {
   })
 });
 
-app.get('/api/questions/:id/ /*column name*/', function (req, res) {
+app.get('/api/questions/:id/questions', function (req, res) {
     db.getAllQuestions((err, data) => {           //calls the getAllStudents function
       if(err){                                   //error first callback
         console.log('Question DB error');

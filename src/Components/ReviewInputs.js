@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect } from "react-router-dom";
-// import axios from 'axios';
+import axios from 'axios';
 
 class ReviewInputs extends React.Component {
     constructor(props){
@@ -26,18 +26,18 @@ class ReviewInputs extends React.Component {
             [e.target.name]: e.target.value
         })
     }
-    // changeHandler(){
-    //     axios 
-    //     .get("/api/Reviews/:id/review")
-    //     .then((res) => {
-    //       console.log(res.data);
-    //       const data = res.data;
-    //       this.setState({groups : data}); 
-    //     })
-    //     .catch((err) => { 
-    //       console.error(err);
-    //     });
-    //     }
+    changeHandler(){
+        axios 
+        .get("/api/Reviews/:id/review")
+        .then((res) => {
+          console.log(res.data);
+          const data = res.data;
+          this.setState({review : data}); 
+        })
+        .catch((err) => { 
+          console.error(err);
+        });
+    }
     componentDidMount(){
         // changeHandler()
     }
