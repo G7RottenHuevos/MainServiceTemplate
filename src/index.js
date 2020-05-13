@@ -5,10 +5,12 @@ import App from './App.jsx';
 // import './index.css';
 import '../src/styles/App.scss';
 
+console.log(process.env);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('Rodriguez-root')
 );
 

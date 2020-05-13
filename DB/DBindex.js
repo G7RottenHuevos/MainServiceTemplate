@@ -11,18 +11,7 @@ const retrieveAllSimilarItems = (cb) => {
     }
   });
 };
-const retrieveSingleSimilarItems = (id, cb) => {
-  connection.query("SELECT * FROM similar_items WHERE id=?", [id], function (
-    error,
-    results
-  ) {
-    if (error) {
-      cb(error, null);
-    } else {
-      cb(null, results);
-    }
-  });
-};
+
 const retrieveAllCustomersAlsoBoughtItems = (cb) => {
   connection.query("SELECT * FROM customers_also_bought", function (
     error,
@@ -35,21 +24,8 @@ const retrieveAllCustomersAlsoBoughtItems = (cb) => {
     }
   });
 };
-const retrieveSingleSimilarItems = (id, cb) => {
-  connection.query(
-    "SELECT * FROM customers_also_bought WHERE id=?",
-    [id],
-    function (error, results) {
-      if (error) {
-        cb(error, null);
-      } else {
-        cb(null, results);
-      }
-    }
-  );
-};
+
 module.exports = {
   retrieveAllSimilarItems,
-  retrieveSingleSimilarItems,
   retrieveAllCustomersAlsoBoughtItems,
 };

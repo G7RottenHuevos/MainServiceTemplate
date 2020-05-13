@@ -2,6 +2,7 @@ import React from "react";
 import Similar from "../src/Component/Similar_Items_Demo.js";
 import AlsoBought from "../src/Component/Customers_Also_Bought.js";
 import { Nav } from "react-bootstrap";
+import axios from 'axios';
 
 import "../src/styles/App.scss";
 
@@ -22,12 +23,19 @@ class Main extends React.Component {
     this.selectedItems = this.selectedItems.bind(this);
     this.AddSelectedToCart = this.AddSelectedToCart.bind(this);
   }
+  componentDidMount() {
+    axios.get('/similarItems')
+      .then(res => {
+        const siData = res.data;
+        this.setState({ siData });
+      })
+  }
 
   clickSimilar() {
     this.setState((state) => ({
       currentTab: "similar",
     }));
-    console.log(this.state.currentTab);
+    console.log(this.state.siData);
   }
   clickAlso() {
     this.setState((state) => ({
