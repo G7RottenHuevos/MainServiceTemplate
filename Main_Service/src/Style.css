@@ -67,11 +67,17 @@ p.gonzo2 {
   padding: 3px;
   font-size: 13px;
   cursor: pointer;
+  top: 131px;
+  left: 330px;
+  position: fixed;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  top: 131px;
+  left: 330px;
+  position: fixed;
 }
 
 .dropDownContent {
