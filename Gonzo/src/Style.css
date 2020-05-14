@@ -5,7 +5,6 @@ ul.gonzoA {
 p.gonzo1 {
    font-family: arial;
    font-size: 23px;
-
 }
 p.gonzo2 {
    font-family: arial;
@@ -68,31 +67,26 @@ p.gonzo2 {
   font-size: 13px;
   cursor: pointer;
   top: 131px;
-  left: 330px;
+  left: 430px;
   position: fixed;
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
   top: 155px;
-  left: 330px;
+  left: 430px;
   position: fixed;
 }
-
 .dropDownContent {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   z-index: 1;
-  /* right: 0; */
-  /* fix this if set wrong */
 }
 .dropdown:hover .dropDownContent {
   display: block;
 }
-
 .dropdown:hover .dropbtn {
   background-color:white;
   padding: 3px;
@@ -103,15 +97,13 @@ p.gonzo2 {
   background-color:rgb(230, 0, 35);
   font-size: 13px;
   font-style: arial;
-  color: white;
-  
+  color: white; 
 }
 .twitter {
   background-color:rgba(59, 107, 228, 0.94);
   font-size: 13px;
   font-style: arial;
-  color: white;
-  
+  color: white; 
 }
 .email {
   background-color:whitesmoke;
@@ -134,4 +126,11 @@ p.gonzo2 {
 .pp {
   height: 100px;
   width: 100%;
+}
+.viewMoreItems {
+  font-size: 17px;
+  font-style: arial;
+}
+.masks {
+  text-decoration: underline;
 }

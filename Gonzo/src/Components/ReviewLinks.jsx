@@ -4,13 +4,16 @@ import { FaPinterest} from "react-icons/fa";
 import { FaTwitter} from "react-icons/fa";
 import { BsFillEnvelopeOpenFill} from "react-icons/bs";
 import {FaUsb} from "react-icons/fa";
+import {FaSearch} from 'react-icons/fa';
+
 
 const ReviewLinks = (props) => {
     return (
         <div>
             <img src='https://i.imgur.com/LapAnWf.png'className="gonzoEggs"/>(8)
             <a class='gonzoReview1'>Write a Review</a>
-            <a class='gonzoReview2' >See <b>2</b> Questions | <b>25</b>Answers</a>
+            <a class='gonzoReview2' href="#PaulApp">See <b>2</b> Questions | <b>25</b>Answers</a>
+            <p class='viewMoreItems'><FaSearch/>See More <u className='masks'>"Masks"</u></p>
             <div>
             <div className='dropdown'>
                 <button className='dropbtn'><FaUsb/><b>SHARE</b></button>

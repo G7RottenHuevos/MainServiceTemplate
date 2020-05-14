@@ -10,22 +10,22 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      questions: [],
-      answers: []
+      masks: [],
+      
     }
     // bind 
-    // this.reviewHandler = this.reviewHandler.bind(this);
+    this.moreItems = this.moreItems.bind(this);
   }
   // function definitions
-  // reviewHandler = () => {
-  //   alert("Log in required!");
-  // }
+  moreItems = () => {
+    alert("Log in required!");
+  }
 
   render() {
     return (
       <div>
         <TopDescription />
-        <ReviewLinks />
+        <ReviewLinks onclick={this.moreItems}/>
         <Shipping /> 
         <BottomDescription />
       </div>
