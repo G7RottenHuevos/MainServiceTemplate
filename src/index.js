@@ -8,9 +8,9 @@ import '../src/styles/App.scss';
 // console.log(process.env);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('Rodriguez-root')
+  // <React.StrictMode>
+    <App />,
+  // </React.StrictMode>,
+  document.getElementById('Rodriguez')
 );
 

@@ -24,6 +24,19 @@ app.get("/similar", function (req, res) {
   });
 });
 
+app.get("/CustomersAlsoBought", function (req, res) {
+  console.log("hello");
+  db.retrieveAllCustomersAlsoBoughtItems((err, data) => {
+    if (err) {
+      console.log("error in server");
+      res.status(405).send(data);
+    } else {
+      console.log("These are things others bought");
+      res.status(200).send(data);
+    }
+  });
+});
+
 app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
 );

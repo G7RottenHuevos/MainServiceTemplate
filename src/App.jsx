@@ -2,7 +2,7 @@ import React from "react";
 import Similar from "../src/Component/Similar_Items_Demo.js";
 import AlsoBought from "../src/Component/Customers_Also_Bought.js";
 import { Nav } from "react-bootstrap";
-import axios from 'axios';
+import axios from "axios";
 
 import "../src/styles/App.scss";
 
@@ -24,12 +24,16 @@ class Main extends React.Component {
     this.AddSelectedToCart = this.AddSelectedToCart.bind(this);
   }
   componentDidMount() {
-    axios.get('/similar')
-      .then(res => {
-        const similarItemsData = res.data;
-        console.log(similarItemsData);
-        this.setState({ similarItemsData });
-      })
+    axios.get("/similar").then((res) => {
+      const similarItemsData = res.data;
+      console.log(similarItemsData);
+      this.setState({ similarItemsData });
+    });
+    axios.get("/CustomersAlsoBought").then((res) => {
+      const customersAlsoBoughtData = res.data;
+      console.log(customersAlsoBoughtData);
+      this.setState({ customersAlsoBoughtData });
+    });
   }
 
   clickSimilar() {
@@ -45,13 +49,13 @@ class Main extends React.Component {
     console.log(this.state.currentTab);
   }
   shopAllSimilarItems() {
-    console.log("You are now shopping for similar items");
+    alert("You are now shopping for similar items");
   }
   selectedItems(e) {
-    console.log("You are now selecting items");
+    alert("You are now selecting items");
   }
   AddSelectedToCart() {
-    console.log("You've added selected to cart");
+    alert("You've added selected to cart");
   }
 
   render() {
@@ -68,7 +72,10 @@ class Main extends React.Component {
           <Nav.Item></Nav.Item>
         </Nav>
         {this.state.currentTab === "similar" ? (
-          <Similar shopAllSimilarItems={this.shopAllSimilarItems} />
+          <Similar
+            shopAllSimilarItems={this.shopAllSimilarItems}
+            data={this.state.similarItemsData}
+          />
         ) : (
           <AlsoBought
             selectedItems={this.selectedItems}

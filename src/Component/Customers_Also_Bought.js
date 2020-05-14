@@ -241,11 +241,11 @@ class AlsoBought extends React.Component {
                 50 Pcs 3 Layer Disposible Face Masks Tie-on Earloop/Elastic
               </div>
             </div>
-            <button id="Selected_Items_Btn" onClick={this.selectedItems}>
+            <button id="Selected_Items_Btn" onClick={this.props.selectedItems}>
               {this.state.checkedBoxes} Selected Items
             </button>
             <div id="Price">{this.props.price}</div>
-            <button id="Add_To_Cart_Btn" onClick={this.AddSelectedToCart}>
+            <button id="Add_To_Cart_Btn" onClick={this.props.AddSelectedToCart}>
               ADD SELECTED TO CART
             </button>
           </div>
