@@ -37,7 +37,12 @@ class Scroller extends React.Component {
           <thead className='main-image'>
             <tr>
               <td className='headerImg'>
-                <img src={this.state.image} alt={this.state.images[0]} className='imgHead' onClick={this.togglePopup.bind(this)}></img> 
+                <img 
+                  src={this.state.image} 
+                  alt={this.state.images[0]} 
+                  className='imgHead' 
+                  onClick={this.togglePopup.bind(this)}>
+                </img> 
               </td>
             </tr>
           </thead>
@@ -45,7 +50,13 @@ class Scroller extends React.Component {
             <tr>
               <td className='imgButtons'>
               {this.state.images.map((val, index) => {
-                return <img src={val} alt={index} key={index} className='img' onMouseEnter={this.handleHover.bind(this, index)}></img>;
+                return <img 
+                  src={val} 
+                  alt={index} 
+                  key={index} 
+                  className='img' 
+                  onMouseEnter={this.handleHover.bind(this, index)}>
+                </img>;
               })}
               </td>
             </tr>

@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import Scroller from './Component/imgScroller';
 import './Appmlh.css'; 
 class App extends React.Component{
@@ -13,9 +14,22 @@ class App extends React.Component{
         'https://i.imgur.com/0i8iBU7.jpg'
       ]
     }
+    this.getImages = this.getImages.bind(this);
   }
 
   componentDidMount() {
+    this.getImages();
+  }
+  //TODO: Attach axios request to state and render it on-load.
+  getImages() {
+    axios.get('/api/carousel')
+    .then(res => {
+      this.setState({images: res.data});
+      console.log(this.state.images);
+    })
+    .catch(err => {
+      console.log(err);
+    })
   }
 
   render() {
