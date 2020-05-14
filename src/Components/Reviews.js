@@ -1,5 +1,13 @@
 import React from 'react';
 import ReviewInputs from './ReviewInputs';
+
+
+
+export const Reviews = () =>(
+  <div>
+  <ReviewInputs/>
+  </div>
+)
 // import axios from 'axios';
 
 // class Reviews extends React.Component{
@@ -34,10 +42,3 @@ import ReviewInputs from './ReviewInputs';
 // }
 
 // export default Reviews;
-
-
-export const Reviews = () =>(
-    <div>
-    <ReviewInputs/>
-  </div>
-)
