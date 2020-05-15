@@ -4,7 +4,7 @@ var searchResults = require('../DB/DBindex')
 var db = require('../database-mysql/index.js');
 var path = require('path')
 var app = express();
-var port = 6969;
+var port = 3101;
 
 
 app.use( bodyParser.json() );
