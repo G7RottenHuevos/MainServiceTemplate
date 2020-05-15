@@ -15,12 +15,12 @@
     "express": "4.17.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3500 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch": "live-server server.js"
   },
-  "proxy": "http://localhost:3000",
   "eslintConfig": {
     "extends": "react-app"
   },

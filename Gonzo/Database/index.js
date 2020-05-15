@@ -5,7 +5,7 @@ const connection = mysql.createConnection(mysqlConfig);
 connection.connect();
 
 const getAllItems = function(cb) {
-    connection.query('SELECT * FROM masks;', (err, data) => {
+    connection.query("SELECT * FROM masks;", (err, data) => {
         if (err) {
             cb(err, null);
         } else {

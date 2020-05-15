@@ -13,7 +13,7 @@ p.gonzo2 {
    top: 40px; left: 40px;
 }
 .gonzoBottomDescriptionA {
-  font-size: 23px;
+  font-size: 20px;
   font-style: arial;
 }
 .gonzoTopDescription1 {
@@ -69,6 +69,7 @@ p.gonzo2 {
   top: 131px;
   left: 430px;
   position: fixed;
+ 
 }
 .dropdown {
   position: relative;
@@ -133,4 +134,22 @@ p.gonzo2 {
 }
 .masks {
   text-decoration: underline;
+}
+.collin {
+  position: fixed;
+  width: 100px;
+  top: 170px;
+  left: 170px;
+  /* display: none; */
+  opacity: 0;
+  display: block;
+  /* height: auto; */
+  transition: .1s ease;
+  backface-visibility: hidden;
+  border-radius: 4px;
+}
+.collin:hover {
+  display: block;
+  opacity: 1;
+  border-radius: 4px;
 }

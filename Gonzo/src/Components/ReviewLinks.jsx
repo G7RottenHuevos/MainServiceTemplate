@@ -10,10 +10,10 @@ import {FaSearch} from 'react-icons/fa';
 const ReviewLinks = (props) => {
     return (
         <div>
-            <img src='https://i.imgur.com/LapAnWf.png'className="gonzoEggs"/>(8)
-            <a class='gonzoReview1'>Write a Review</a>
-            <a class='gonzoReview2' href="#PaulApp">See <b>2</b> Questions | <b>25</b>Answers</a>
-            <p class='viewMoreItems'><FaSearch/>See More <u className='masks'>"Masks"</u></p>
+            <img src='https://i.imgur.com/LapAnWf.png'alt='something' className="gonzoEggs"/>(8)
+            <a className='gonzoReview1'href="#PaulApp" >Write a Review</a>
+            <a className='gonzoReview2' href="#PaulApp">See <b>2</b> Questions | <b>25</b>Answers</a>
+            <p className='viewMoreItems'><FaSearch/>See More <u className='masks'>"Masks"</u></p>
             <div>
             <div className='dropdown'>
                 <button className='dropbtn'><FaUsb/><b>SHARE</b></button>
@@ -29,7 +29,7 @@ const ReviewLinks = (props) => {
                             <br></br>
                             <button className="pintrest"><a className="pintrest" href="https://pintrest.com/" data-widget-id="Page ID"><FaPinterest/>Save</a></button>      
                             <br></br>
-                            <button><a href="http://www.tv.com/shows/silicon-valley" data-widget-id="Page ID"><img src='https://i.imgur.com/O4e3wEF.png'className='pp'/>#CurrFavShow</a></button>
+                            <button><a href="http://www.tv.com/shows/silicon-valley" alt='' data-widget-id="Page ID"><img src='https://i.imgur.com/O4e3wEF.png'className='pp'/>#CurrFavShow</a></button>
                     </div>
                 </div>
             </div>

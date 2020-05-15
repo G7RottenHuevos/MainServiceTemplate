@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import ReviewLinks from './Components/ReviewLinks.jsx';
 import BottomDescription from './Components/BottomDescriptionBox.jsx';
 import Shipping from './Components/Shipping';
@@ -28,10 +28,11 @@ class App extends React.Component {
         <ReviewLinks onclick={this.moreItems}/>
         <Shipping /> 
         <BottomDescription />
+        <img src='https://i.imgur.com/0PfjZ8G.jpg' alt='something' className='collin'/>
       </div>
     )
   }
 }
 
 export default App;
-// add
+
