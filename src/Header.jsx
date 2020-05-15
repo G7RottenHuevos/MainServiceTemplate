@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Navbar, Nav, NavDropdown, Form, FormControl, Alert } from 'react-bootstrap';
+import { Button, Navbar, Nav, NavDropdown, Form, FormControl } from 'react-bootstrap';
 import { FaMedapps, FaBars,FaFlagUsa } from 'react-icons/fa';
 import { IoIosContact } from "react-icons/io";
 import { MdChatBubbleOutline } from "react-icons/md";
@@ -13,7 +13,7 @@ import './Header.css'
         <NavDropdown.Item href="http://localhost:3000/">Today's Best Deals</NavDropdown.Item>
         <NavDropdown.Item href="http://localhost:3000/">Email Deals</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Header>ALL</NavDropdown.Header>
+        <NavDropdown.Header>ALL PRODUCTS</NavDropdown.Header>
         <NavDropdown.Item href="http://localhost:3000/">Computer Systems</NavDropdown.Item>
         <NavDropdown.Item href="http://localhost:3000/">Components</NavDropdown.Item>
         <NavDropdown.Item href="http://localhost:3000/">Electronics</NavDropdown.Item>

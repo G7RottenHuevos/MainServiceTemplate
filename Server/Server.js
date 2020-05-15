@@ -4,7 +4,7 @@ var searchResults = require('../DB/DBindex')
 var db = require('../database-mysql/index.js');
 var path = require('path')
 var app = express();
-var port = "6969";
+var port = 6969;
 
 
 app.use( bodyParser.json() );
@@ -24,6 +24,6 @@ app.get('/api/autofill', function (req, res) {
 });
 
 app.listen(port, function() {
-    console.log('listening on port 6969!');
+    console.log(`listening on port ${PORT}`);
   });
   

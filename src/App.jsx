@@ -1,7 +1,8 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Header from './Header'
+import Header from './Header';
+import axios from 'axios';
 
 
 class App extends React.Component{
@@ -14,7 +15,7 @@ class App extends React.Component{
 
   autofill() {
     axios
-      .get("/header")
+      .get("/api/autofill")
       .then((res) => {
         console.log(res.data);
         const data = res.data;
