@@ -7,23 +7,40 @@ class ReviewInputs extends React.Component {
     super(props);
     this.state = {
       review: [],
+      singleName: "",
+      singleReview: "",
     };
   }
-  buttonClickListener = () => {
-    const { review } = this.state;
-    alert(review);
-  };
+
   handleSubmit = (e) => {
     e.preventDefault();
-    const data = this.state;
-    alert("Review Submited");
+    let singleReview = this.state.singleReview;
+    let singleName = this.state.singleName;
+   axios
+   .post("/api/Reviews/", {singleReview, singleName})
+   .then((res) => {
+     console.log("post sent");
+     this.changeHandler();
+   })
+   .catch((err) => {
+     console.log("error on post")
+   })
   };
+
   handleInputChange = (e) => {
     e.preventDefault();
     this.setState({
-      [e.target.name]: e.target.value,
+      singleName: e.target.value,
     });
   };
+
+  handleInputChanges = (e) => {
+    e.preventDefault();
+    this.setState({
+      singleReview: e.target.value,
+    });
+  };
+
   changeHandler() {
     axios
       .get("/api/Reviews/")
@@ -31,18 +48,19 @@ class ReviewInputs extends React.Component {
         console.log(res.data);
         const data = res.data;
         this.setState({ review: data });
+        console.log("is this being run")
       })
       .catch((err) => {
         console.error(err);
       });
   }
+  
   componentDidMount() {
     this.changeHandler();
   }
 
   render() {
-    // const { name } = this.state;
-    // const { review } = this.state;
+
     return (
       <div>
         <h1>Reviews</h1>
@@ -60,7 +78,7 @@ class ReviewInputs extends React.Component {
               type="text"
               placeholder="Write Review Here"
               review="review"
-              onChange={this.handleInputChange}
+              onChange={this.handleInputChanges}
             />
           </p>
           <p>

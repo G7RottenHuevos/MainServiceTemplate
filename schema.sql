@@ -7,7 +7,7 @@ USE TabsDB;
 CREATE TABLE Reviews (
   id int NOT NULL AUTO_INCREMENT,
   name varchar(50) NOT NULL,
-  review varchar(50) NOT NULL,
+  review varchar(200) NOT NULL,
   PRIMARY KEY (ID)
 );
 
@@ -18,69 +18,25 @@ CREATE TABLE Questions (
   PRIMARY KEY (ID)
 );
 
-INSERT INTO Reviews (id, name, review)
-VALUES (1, "Paul", "These Masks are awesome!");
-INSERT INTO Reviews (id, name, review)
-VALUES (2, "Mike G", "Can these make me a google drive?????");
-INSERT INTO Reviews (id, name, review)
-VALUES (3, "Collin S", "These are not what i though they would be");
-INSERT INTO Reviews (id, name, review)
-VALUES (4, "Dalton", "I still got the Rona even with them on");
-INSERT INTO Reviews (id, name, review)
-VALUES (5, "Marc", "I only bought these because i needed one to go to the shoppet");
-INSERT INTO Reviews (id, name, review)
-VALUES (6, "Emery", "The picture shows a blue mask, but i recieved green!?!?");
-INSERT INTO Reviews (id, name, review)
-VALUES (7, "Tyler", "I use these in Walmart all the time!");
-INSERT INTO Reviews (id, name, review)
-VALUES (8, "Nic", "These were adequate");
-INSERT INTO Reviews (id, name, review)
-VALUES (9, "Collin", "They did the job");
-INSERT INTO Reviews (id, name, review)
-VALUES (10, "Andrew", "These are overpriced");
-INSERT INTO Reviews (id, name, review)
-VALUES (11, "Matt", "They work well, but costs too much");
-INSERT INTO Reviews (id, name, review)
-VALUES (12, "Zubair", "These Masks are awesome!");
-INSERT INTO Reviews (id, name, review)
-VALUES (13, "Caroline", "These Masks are awesome!");
-INSERT INTO Reviews (id, name, review)
-VALUES (14, "Mario", "These Masks are awesome!");
-INSERT INTO Reviews (id, name, review)
-VALUES (15, "Tye", "These Masks are awesome!");
-INSERT INTO Reviews (id, name, review)
-VALUES (16, "Kim", "These Masks are awesome!");
+INSERT INTO Reviews (name, review)
+VALUES ("Paul", "These Masks are awesome!"), ("Mike G", "These masks are too small"),
+("Collin S", "These are not what i though they would be"),
+("Dalton", "I still got the Rona even with them on"), 
+("Marc", "I only bought these because i needed one to go to the shoppet"),
+("Emery", "The picture shows a blue mask, but i recieved green!?!?"),
+("Tyler", "I use these in Walmart all the time!"),
+("Nic", "These were adequate"),("Collin", "They did the job"),
+( "Andrew", "These are overpriced"),
+("Matt", "They work well, but costs too much"),("Zubair", "These Masks are awesome!"),
+( "Caroline", "These Masks are awesome!"),
+("Mario", "These Masks are awesome!"),("Tye", "These Masks are awesome!"),
+("Kim", "These Masks are awesome!");
 
-
-INSERT INTO Questions (id, name, question)
-VALUES (1, "Paul", "Are these reusable?");
-INSERT INTO Questions (id, name, question)
-VALUES (2, "Mike G", "What is a google drive????????????");
-INSERT INTO Questions (id, name, question)
-VALUES (3, "Collin S", "How many Masks do these come with?");
-INSERT INTO Questions (id, name, question)
-VALUES (4, "Dalton", "What color are the masks?");
-INSERT INTO Questions (id, name, question)
-VALUES (5, "Marc", "Are these made in China?");
-INSERT INTO Questions (id, name, question)
-VALUES (6, "Emery", "Will these stop CoronaISIS?");
-INSERT INTO Questions (id, name, question)
-VALUES (7, "Tyler", "How many times can we use these?");
-INSERT INTO Questions (id, name, question)
-VALUES (8, "Nic", "Cool Masks?");
-INSERT INTO Questions (id, name, question)
-VALUES (9, "Collin", "What is life?");
-INSERT INTO Questions (id, name, question)
-VALUES (10, "Andrew", "What is life?");
-INSERT INTO Questions (id, name, question)
-VALUES (11, "Matt", "What is life?");
-INSERT INTO Questions (id, name, question)
-VALUES (12, "Zubair", "What is life?");
-INSERT INTO Questions (id, name, question)
-VALUES (13, "Caroline", "What is life?");
-INSERT INTO Questions (id, name, question)
-VALUES (14, "Mario", "What is life?");
-INSERT INTO Questions (id, name, question)
-VALUES (15, "Tye", "What is life?");
-INSERT INTO Questions (id, name, question)
-VALUES (16, "Kim", "What is life?");
+INSERT INTO Questions (name, question)
+VALUES ("Paul", "Are these reusable?"),("Mike G", "What is a google drive????????????"),
+("Collin S", "How many Masks do these come with?"),
+("Dalton", "What color are the masks?"),("Marc", "Are these made in China?"),
+("Emery", "Will these stop CoronaISIS?"),("Tyler", "How many times can we use these?"),
+("Nic", "Cool Masks?"),("Collin", "What is life?"),("Andrew", "What is life?"),
+("Matt", "What is life?"),("Zubair", "What is life?"),("Caroline", "What is life?"),
+("Mario", "What is life?"),("Tye", "What is life?"),("Kim", "What is life?");
