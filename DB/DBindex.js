@@ -21,7 +21,7 @@ const getAllQuestions = (cb) => {
             console.log("Questions not good")    
             cb(err, null)                                       
         }else{
-            console.log("Questions good")
+            console.log(data)
             cb(null, data)
         }
     })
