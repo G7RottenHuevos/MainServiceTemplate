@@ -20,6 +20,8 @@ INSERT INTO similar_items (item_name, item_catagory, price, html) VALUES ("Dispo
 INSERT INTO similar_items (item_name, item_catagory, price, html) VALUES ("Fashionable Black Mask", "Medical", "7.96","https://recommendedforyou.s3.us-east-2.amazonaws.com/Img_6.jpg");
 INSERT INTO similar_items (item_name, item_catagory, price, html) VALUES ("Silver Antibacterial sanitizer", "Medical", "14.53","https://recommendedforyou.s3.us-east-2.amazonaws.com/Img_7.jpg");
 INSERT INTO similar_items (item_name, item_catagory, price, html) VALUES ("Childrens Protective Mask", "Medical", "9.99","https://recommendedforyou.s3.us-east-2.amazonaws.com/Img_8.jpg");
+INSERT INTO similar_items (item_name, item_catagory, price, html) VALUES ("Disposable Mask 3-layer Protective Mask ","Medical","33.49","https://recommendedforyou.s3.us-east-2.amazonaws.com/Img_4.jpg");
+INSERT INTO similar_items (item_name, item_catagory, price, html) VALUES ("Disposable Gloves", "Medical", "14.99","https://recommendedforyou.s3.us-east-2.amazonaws.com/Img_5.jpg");
 
 
 CREATE TABLE IF NOT EXISTS customers_also_bought (
