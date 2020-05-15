@@ -85,7 +85,7 @@ class ReviewInputs extends React.Component {
             <button onClick={this.buttonClickListener}>Write A Review</button>
           </p>
         </form>
-
+            
              <div>
              {this.state.review.length > 0 ? 
               this.state.review.map((value, index) => (
