@@ -54,7 +54,7 @@ import './Header.css'
       <Nav.Link href="#link"><a className="daltonShoppingCart" href="http://localhost:3000/"><img src="https://i.imgur.com/WU8Xx4F.png"></img></a></Nav.Link>
     </Nav>
     <Form inline className="daltonSearchBar">
-      <FormControl type="text" placeholder="Keywords, Model # or Item" className="mr-sm-2"/>
+      <FormControl type="text" placeholder="Keywords, Model # or Item #" className="mr-sm-2"/>
       <Button variant="outline-success" className="daltonSearchButton">Search</Button>
     </Form>
     <Button className="daltonNightMode" variant="light" href="http://localhost:3000/"> <FaMedapps /></Button>

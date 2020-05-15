@@ -18,6 +18,7 @@ left: 1865px;
 position: absolute;
 right: 500px;
 bottom: 50px;
+margin-right: .5rem!important;
 
 }
 
@@ -37,10 +38,6 @@ bottom: 50px;
     position: absolute;
     left: 2025px;
     bottom: 45px;
-}
-
-.daltonSearchBar{
-    width: 100vw;
 }
 
 .daltonSignInIcon {
@@ -92,4 +89,8 @@ bottom: 50px;
     left: 1745px;
     bottom: 70px;
     color: rgb(151, 151, 151);
+}
+
+.form-inline .form-control {
+    width: 55vw!important;
 }
