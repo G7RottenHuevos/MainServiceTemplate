@@ -23,8 +23,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Trello 
-
+**Trello Board
 Trello Board https://trello.com/b/mPTsUHI2/g7-rotten-huevos
 
 ## Front-End
@@ -37,9 +36,9 @@ Nodejs, Express.
 
 Used the git feature branch workflow for this project and used Trello to manage pending tasks, bugs and provide feedback
 
-### Challenges & Learnings
+## Challenges & Learnings
 
-## Challenges
+### Challenges
 <ul>
 <li> Implementing unfamiliar technologies like bootstrap</li>
 <li> Integrating server routes while using React router</li>
@@ -47,7 +46,7 @@ Used the git feature branch workflow for this project and used Trello to manage 
   <li> Creating a proxy server with create React-App</li>   
 </ul>
 
-## Learnings
+### Learnings
 
 <ul>
 <li> Developing in a time constrained enviroment</li>
