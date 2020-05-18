@@ -26,5 +26,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 **Trello Board https://trello.com/b/mPTsUHI2/g7-rotten-huevos
 
 ### Acknowledgments
-to the SEIRS for their time and advice 
+<li>
+  SEIRS for their time and advice
+  fellow classmates for their suggestions and effort
+ </li>
 
