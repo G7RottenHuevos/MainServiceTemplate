@@ -23,7 +23,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Trello Board
+### Trello Board
 Trello Board https://trello.com/b/mPTsUHI2/g7-rotten-huevos
 
 ## Front-End
@@ -54,7 +54,7 @@ Used the git feature branch workflow for this project and used Trello to manage 
 <li> Producing an MVP as soon as possible in order to dedicate more time to proper placement and integrate with other applications</li>
 </ul>
 
-### Acknowledgments
+## Acknowledgments
 <ul>
   <li>SEIRS for their time and advice</li>
   <li>Fellow classmates for their input and effort </li>
