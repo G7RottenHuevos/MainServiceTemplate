@@ -23,3 +23,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
+**Trello Board https://trello.com/b/mPTsUHI2/g7-rotten-huevos
+
+### Acknowledgments
+to the SEIRS for their time and advice 
+
