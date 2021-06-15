@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.jsx';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 // import './index.css';
 import '../src/styles/App.scss';
+import { ItemProvider } from '../src/Component/itemContext.jsx';
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <ItemProvider>
     <App />
-  </React.StrictMode>,
+  </ItemProvider>,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
-
