@@ -1,11 +1,14 @@
-#Button3 {
+#button-3 {
   background-color: white;
   border-color: white;
 }
-#Button4 {
-    -webkit-transform: scale(1.1) translate(600px);
-    // margin: 10px 20px;
-    background-color: rgb(230, 114, 5);
-    border-color: rgb(225, 3, 3);
-  }
-  
+#button4 {
+  -webkit-transform: scale(1.1) translate(600px);
+  // margin: 10px 20px;
+  background-color: rgb(230, 114, 5);
+  border-color: rgb(225, 3, 3);
+}
+
+.add-selected-items {
+  border-color: red;
+}
